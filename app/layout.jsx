@@ -1,4 +1,4 @@
-import '@styles/globals.scss';
+import '@styles/globals.css';
 
 
 export const matadata = {
@@ -7,7 +7,7 @@ export const matadata = {
   
 }
 
-const RootLayout = () => {
+const RootLayout = ({children}) => {
   return (
    <html lang='en'>
     <body>
@@ -15,7 +15,7 @@ const RootLayout = () => {
             <div className="gradient"/>
         </div>
         <main className='app'>
-
+            {children}
         </main>
     </body>
 
